@@ -1,0 +1,25 @@
+#[target.i686-pc-windows-msvc.freetype]
+#rustc-link-search = ["C:\\Path\\To\\binaries\\i686"]
+#rustc-link-lib = ["freetype"]
+
+##
+## For Wandowz, point these to where the respective libs are (GCC-64)
+[target.x86_64-pc-windows-msvc.freetype]
+rustc-link-search = ["C:\\github\\piston\\binaries\\x86_64"]
+rustc-link-lib = ["freetype"]
+
+[target.x86_64-pc-windows-gnu.freetype]
+rustc-link-search = ["C:\\github\\win-builds\\lib64\\"]
+rustc-link-lib = ["freetype"]
+
+[target.x86_64-pc-windows-gnu.SDL2]
+rustc-link-search = ["C:\\github\\win-builds\\lib64\\"]
+rustc-link-lib = ["SDL2"]
+
+[target.x86_64-pc-windows-gnu.csfml-graphics]
+rustc-link-search = ["C:\\github\\win-builds\\lib64\\"]
+rustc-link-lib = ["csfml-graphics"]
+
+[target.x86_64-pc-windows-gnu.csfml-audio]
+rustc-link-search = ["C:\\github\\win-builds\\lib64\\"]
+rustc-link-lib = ["csfml-audio"]
